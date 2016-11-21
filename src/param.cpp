@@ -40,7 +40,7 @@ int readParam()
 {
 	ifstream fin;
 
-    fin.open("/home/ftx1994/QuadRotor_Param.txt");
+    fin.open("/home/ftx1994/catkin_ws/src/QuadRotor_Simulation/param/QuadRotor_Param.yaml");
 
 	if (!fin)
 	{

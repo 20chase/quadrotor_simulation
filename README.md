@@ -1,12 +1,20 @@
-This is a simulation program for quadrotor.
-
-Environment: Ubuntu 14.04 LTS
-	     ROS Indigo
-
-Build it:
+This is a simulation program for quadrotor by ftx.
+------------------------------------------------
+Environment: Ubuntu 14.04 LTS	     ROS Indigo
+------------------------------------------------
+dependences
+	eigen
+------------------------------------------------
+Build
 	catkin_make
-
-Run it:
+------------------------------------------------
+Run
 	rosrun QuadRotor_Simulation QuadRotor
-	
-	You can use Rviz to Visualize it.
+------------------------------------------------	
+some detail
+    I use a txt to manage my quadrotor param.You 
+can Look the detail information of param in 
+param.cpp. You can use Rviz to visualize it. 
+
+    If you have any advice and problem, Please
+contact me ftx1994@foxmail.com

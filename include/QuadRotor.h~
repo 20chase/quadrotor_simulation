@@ -1,0 +1,36 @@
+#include <Eigen/Dense>
+
+using namespace Eigen;
+
+extern double Ir;
+
+extern double M;
+
+extern double G;
+
+extern double Kl;
+extern double Kd;
+
+extern double L;
+
+
+extern MatrixXd w,inertia;
+extern MatrixXd P4Attitude, D4Attitude, P4Position, D4Position, P4Velocity, D4Velocity;
+
+
+extern MatrixXd position, velocity, acceleration;
+extern MatrixXd angle, omega, omegaDot;
+
+
+int initialize();
+void writeTrajectory(double(*trajectory)[6], int num);
+double limitMax(double input, double max);
+
+MatrixXd computeRotation(MatrixXd angle);
+MatrixXd computeThrust(MatrixXd w);
+MatrixXd computeAcceleration(MatrixXd Thrust, MatrixXd Rotation);
+
+MatrixXd computeTorque(MatrixXd w);
+MatrixXd computeOmegaDot(MatrixXd omega, MatrixXd tauque, MatrixXd w);
+
+

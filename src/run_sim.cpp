@@ -44,11 +44,11 @@ Odometry Odom;
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "QuadRotor");
+    ros::init(argc, argv, "quadrotor");
     ros::NodeHandle nh;
     ros::Rate loopRate(20);
 
-    position_pub = nh.advertise<nav_msgs::Odometry>("QuadRotor/Position", 10);
+    position_pub = nh.advertise<nav_msgs::Odometry>("/quadrotor/position", 10);
 
 
 

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(QuadRotor_Simulation)
+project(quadrotor_simulation)
 
 
 find_package(catkin REQUIRED COMPONENTS
@@ -22,8 +22,8 @@ include_directories(
   /usr/include
 )
 
-add_executable(QuadRotor src/compute.cpp src/param.cpp src/run_sim.cpp)
-target_link_libraries(QuadRotor ${catkin_LIBRARIES}
+add_executable(quadrotor src/compute.cpp src/param.cpp src/run_sim.cpp)
+target_link_libraries(quadrotor ${catkin_LIBRARIES}
 ${EIGEN3_LIBS}
 )
 

@@ -10,7 +10,7 @@ Build
 	catkin_make
 Run
 ------------------------------------------------
-	rosrun QuadRotor_Simulation QuadRotor
+	rosrun quadrotor_simulation quadrotor
 some detail
 ------------------------------------------------
     I use a txt to manage my quadrotor param.You can Look the detail information of param in param.cpp. You can use Rviz to visualize it. 
